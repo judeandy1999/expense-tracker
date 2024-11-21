@@ -1,7 +1,7 @@
 "use client";
 
 import useTransactions from "@/hooks/useTransactions";
-import AddTransactionForm from "../components/form";
+import AddTransactionForm from "../components/addTransactionForm";
 import TrackerTable from "../components/trackerTable";
 
 const TransactionsPage = () => {
