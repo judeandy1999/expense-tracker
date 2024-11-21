@@ -2,7 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, Create a mongoDB account and Generate a connection sting
+
+Create a `.env` file and create an environment variable named `MONGODB_URI` and paste your connection string there.
+
+Nex, run the development server:
 
 ```bash
 npm run dev
