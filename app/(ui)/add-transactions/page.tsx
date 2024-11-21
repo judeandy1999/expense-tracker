@@ -19,14 +19,18 @@ const TransactionsPage = () => {
         <TrackerTable 
           type="expense"
           tableFields={expenseTransactions}
-          deleteField={deleteTransaction}
+          deleteFieldFunction={deleteTransaction}
+          deleteQuestion={'Are you sure you want to delete?'}
           loading={loading}
+          actionRequired={true}
         />
         <TrackerTable 
           type="income"
           tableFields={incomeTransactions}
-          deleteField={deleteTransaction}
+          deleteFieldFunction={deleteTransaction}
+          deleteQuestion={'Are you sure you want to delete?'}
           loading={loading}
+          actionRequired={true}
         />
       </div>
     </div>

@@ -48,8 +48,10 @@ const EditorPage = () => {
       <TrackerTable 
         type="all"
         tableFields={categories}
-        deleteField={deleteCategory}
+        deleteQuestion={'Are you sure you want to delete? All the transaction associated to this category will be deleted.'}
+        deleteFieldFunction={deleteCategory}
         loading={false}
+        actionRequired={true}
       />
     <form onSubmit={handleAddCategory} style={{ marginBottom: "20px" }}>
       <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-6">
@@ -85,8 +87,8 @@ const EditorPage = () => {
               <option value="" disabled>
                 Select type
               </option>
-              <option value="income">income</option>
-              <option value="expense">expese</option>
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
             </select>
           </div>
         </div>

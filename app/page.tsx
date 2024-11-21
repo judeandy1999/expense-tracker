@@ -7,11 +7,12 @@ export default function Home() {
   const { transactions, loading, handleNewTransaction } = useTransactions();
 
   return (
-    <main>
+    <main className="flex justify-center">
       <TrackerTable 
         type="all"
         tableFields={transactions}
         loading={loading}
+        actionRequired={false}
       />
     </main>
   );
